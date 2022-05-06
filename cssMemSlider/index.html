@@ -5,27 +5,63 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <title>cssMemSlider</title>
 </head>
 <body>
   <div class="slider">
-    <div class="images">
-      <input type="radio" name="slide" id="img1" checked>
-      <input type="radio" name="slide" id="img2">
-      <input type="radio" name="slide" id="img3">
-      <input type="radio" name="slide" id="img4">
-
-      <img src="./images/1.jpeg" class="m1" alt="img1">
-      <img src="./images/2.jpeg" class="m2" alt="img2">
-      <img src="./images/3.jpeg" class="m3" alt="img3">
-      <img src="./images/4.jpeg" class="m4" alt="img4">
-    </div>
-    <div class="dots">
-      <label for="img1"></label>
-      <label for="img2"></label>
-      <label for="img3"></label>
-      <label for="img4"></label>
-    </div>
+    <input type="radio" name="slide" id="slide1" checked>
+    <input type="radio" name="slide" id="slide2">
+    <input type="radio" name="slide" id="slide3">
+    <input type="radio" name="slide" id="slide4">
+    <div class="slider__inner">
+      <div class="slider__image">
+        <img src="./images/1.jpg">
+        <img src="./images/2.jpg">
+        <img src="./images/3.jpg">
+        <img src="./images/4.jpg">
+      </div>  
+      <div class="slider__content">
+        <div class="content__item">
+          <div class="content__title">Этот момент, когда...</div>
+          <div class="dots">
+            <label for="slide1" class="active"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+          </div>
+        </div>
+        <div class="content__item">
+          <div class="content__title">В поисках неизвестного</div>
+          <div class="dots">
+            <label for="slide1"></label>
+            <label for="slide2" class="active"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+          </div>
+        </div>
+        <div class="content__item">
+          <div class="content__title">Тайм менеджмент</div>
+          <div class="dots">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3" class="active"></label>
+            <label for="slide4"></label>
+          </div>
+        </div>
+        <div class="content__item">
+          <div class="content__title">Инъекция от php</div>
+          <div class="dots">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4" class="active"></label>
+          </div>
+        </div>
+      </div>
+    </div>  
   </div>
 </body>
 </html>
