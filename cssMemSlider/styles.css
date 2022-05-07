@@ -15,10 +15,8 @@ body {
 
 .slider {
   position: relative;
-  max-width: 80rem;
+  max-width: 82rem;
   overflow: hidden;
-  width: 100%;
-  /* padding: 0 2rem; */
 }
 
 input[type="radio"] {
@@ -36,14 +34,22 @@ input[type="radio"] {
   display: flex;
 }
 
+.slider__meme {
+  max-width: 100%;
+  border-radius: 2rem;
+  padding: 0 1rem;
+}
+
 .slider__content {
   display: flex;
-  width: 320rem;
+  width: 328rem;
+  max-width: 400%;
 }
 
 .content__item {
   display: flex;
   width: 100%;
+  margin: 0 1rem;
 }
 
 .content__title {
