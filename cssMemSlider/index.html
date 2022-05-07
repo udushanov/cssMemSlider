@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>cssMemSlider</title>
+</head>
+<body>
+  <div class="slider">
+    <input type="radio" name="slide" id="slide1" checked>
+    <input type="radio" name="slide" id="slide2">
+    <input type="radio" name="slide" id="slide3">
+    <input type="radio" name="slide" id="slide4">
+    <div class="slider__inner">
+      <div class="slider__image">
+        <img src="./images/1.jpg" class="slider__meme">
+        <img src="./images/2.jpg" class="slider__meme">
+        <img src="./images/3.jpg" class="slider__meme">
+        <img src="./images/4.jpg" class="slider__meme">
+      </div>  
+      <div class="slider__content">
+        <div class="content__item">
+          <div class="content__title">Этот момент, когда...</div>
+          <div class="dots">
+            <label for="slide1" class="active"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+          </div>
+        </div>
+        <div class="content__item">
+          <div class="content__title">В поисках неизвестного</div>
+          <div class="dots">
+            <label for="slide1"></label>
+            <label for="slide2" class="active"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+          </div>
+        </div>
+        <div class="content__item">
+          <div class="content__title">Тайм менеджмент</div>
+          <div class="dots">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3" class="active"></label>
+            <label for="slide4"></label>
+          </div>
+        </div>
+        <div class="content__item">
+          <div class="content__title">Инъекция от php</div>
+          <div class="dots">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4" class="active"></label>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #25282A;
+  font-family: 'Roboto', sans-serif;
+}
+
+.slider {
+  position: relative;
+  max-width: 82rem;
+  overflow: hidden;
+  max-height: 49.25rem;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.slider__inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  transition: transform 0.2s ease-in;
+}
+
+.slider__image {
+  display: flex;
+}
+
+.slider__meme {
+  max-width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  padding: 0 1rem;
+}
+
+.slider__content {
+  display: flex;
+  width: 328rem;
+  max-width: 400%;
+}
+
+.content__item {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.content__title {
+  width: 100%;
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+}
+
+.dots label {
+  position: relative;
+  height: 1.25rem;
+  width: 1.25rem;
+  border-radius: 50%;
+  background-color: #318CE7;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin: 0.5rem;
+}
+
+.dots label.active {
+  background-color: transparent;
+  border: solid #318CE7 0.2rem;
+}
+
+.dots label:active {
+  background-color: #ccc;
+}
+
+.dots label.active:active {
+  background-color: transparent;
+  border: solid #ccc 0.2rem;
+}
+
+.dots label:hover {
+  background-color: #fff;
+}
+
+.dots label.active:hover {
+  background-color: transparent;
+  border: solid #fff 0.2rem;
+}
+
+#slide1:checked ~ .slider__inner {
+  transform: translate(0%);
+}
+
+#slide2:checked ~ .slider__inner {
+  transform: translate(-100%);
+}
+
+#slide3:checked ~ .slider__inner {
+  transform: translate(-200%);
+}
+
+#slide4:checked ~ .slider__inner {
+  transform: translate(-300%);
+}
+
+@media screen and (max-width: 768px) {
+
+  .content__title {
+    font-size: 1rem;
+  }
+
+  .dots label {
+    width: 1rem;
+    height: 1rem;
+    margin: 0.4rem;
+  }
+
+  .dots label.active {
+    border: solid #318CE7 0.125rem;
+  }
+
+  .dots label.active:active {
+    background-color: transparent;
+    border: solid #ccc 0.125rem;
+  }
+
+  .dots label.active:hover {
+    background-color: transparent;
+    border: solid #fff 0.125rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  
+  .slider__inner {
+    row-gap: 1rem;
+  }
+
+  .content__item {
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
+
+  .content__title {
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  
+  .content__title {
+    font-size: 0.75rem;
+  }
+
+  .dots label {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+}
+
