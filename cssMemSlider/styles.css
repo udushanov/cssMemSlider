@@ -17,6 +17,7 @@ body {
   position: relative;
   max-width: 82rem;
   overflow: hidden;
+  max-height: 49.25rem;
 }
 
 input[type="radio"] {
@@ -36,6 +37,7 @@ input[type="radio"] {
 
 .slider__meme {
   max-width: 100%;
+  height: auto;
   border-radius: 2rem;
   padding: 0 1rem;
 }
@@ -49,6 +51,7 @@ input[type="radio"] {
 .content__item {
   display: flex;
   width: 100%;
+  align-items: center;
   margin: 0 1rem;
 }
 
@@ -113,3 +116,43 @@ input[type="radio"] {
 #slide4:checked ~ .slider__inner {
   transform: translate(-300%);
 }
+
+@media screen and (max-width: 768px) {
+
+  .content__title {
+    font-size: 1rem;
+  }
+
+  .dots label {
+    width: 1rem;
+    height: 1rem;
+    margin: 0.4rem;
+  }
+
+  .dots label.active {
+    border: solid #318CE7 0.125rem;
+  }
+
+  .dots label.active:active {
+    background-color: transparent;
+    border: solid #ccc 0.125rem;
+  }
+
+  .dots label.active:hover {
+    background-color: transparent;
+    border: solid #fff 0.125rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .content__title {
+    font-size: 0.75rem;
+  }
+
+  .dots label {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+}
+
