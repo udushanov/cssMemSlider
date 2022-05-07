@@ -144,8 +144,24 @@ input[type="radio"] {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
+  
+  .slider__inner {
+    row-gap: 1rem;
+  }
 
+  .content__item {
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
+
+  .content__title {
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  
   .content__title {
     font-size: 0.75rem;
   }
